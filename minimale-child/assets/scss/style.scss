@@ -1,0 +1,104 @@
+/*!
+Theme Name:   Minimale Child
+Author:       Matt Ondo
+Description:  An elegant and minimal wordpress theme
+Template:     minimale
+Version: 0.0.1
+!*/
+
+/**********************************************
+ * Imports & Variables
+ *********************************************/
+@import './components/tachyons.min';
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:300,400,700");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+$blue: #5bc3eb;
+$dark-blue: darken($blue, 20%);
+$red: #f06449;
+$green: #66e268;
+$light-gray: #eee;
+$gray: #777;
+$dark-gray: #333;
+
+/**********************************************
+ * Base
+ *********************************************/
+html {
+  font-size: 16px;
+}
+
+.ubuntu {
+  font-family: "Ubuntu", sans-serif;
+}
+
+a {
+  color: $dark-blue;
+
+  &:hover {
+    color: $dark-blue;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: $light-gray; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $gray; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: $dark-gray; 
+}
+
+/**********************************************
+ * Tachyon Customizations
+ *********************************************/
+
+//  Background Colors
+.bg-blue {
+  background-color: $blue;
+}
+.bg-red {
+  background-color: $red;
+}
+.bg-green {
+  background-color: $green;
+}
+
+// Font Colors
+.blue {
+  color: $blue;
+}
+.red {
+  color: $red;
+}
+.green {
+  color: $green;
+}
+.hover-blue:hover {
+  color: $blue;
+}
+.hover-red:hover {
+  color: $red;
+}
+.hover-green:hover {
+  color: $green;
+}
+
+/**********************************************
+ * Custom Components & Styles
+ *********************************************/
+@import './components/form.scss';
+@import './components/navigation.scss';
+@import './components/excerpt.scss';
+@import './components/comments.scss';

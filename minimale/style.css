@@ -1,0 +1,109 @@
+/*
+
+Theme Name:   Minimale
+Author:       Rose S
+Description:  An elegant and minimal black on white WordPress theme
+Version: 0.0.1
+
+-----------------------------------------------------------------------------
+000 CONTENTS
+-----------------------------------------------------------------------------
+001 WordPress Core Classes
+002 Website Links
+003 Display of Images with Alignment
+004 Overflow Fixes
+005 Theme Colours
+
+
+*/
+
+/*---------------------------------------------------------------------------
+001 WordPress Core Classes
+---------------------------------------------------------------------------*/
+.screen-reader-text{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
+.alignright{
+  display:block;
+  float:right;
+}
+.alignleft{
+  display:block;
+  float:left;
+}
+.aligncenter{
+  display:block;
+  margin:0 auto;
+}
+.wp-caption{}
+.wp-caption-text{}
+.sticky{}
+.gallery-caption{}
+.bypostauthor{}
+
+
+/*---------------------------------------------------------------------------
+002 Website Links
+    These use the current Tachyons CSS for .link states http://tachyons.io/docs/elements/links/
+---------------------------------------------------------------------------*/
+a{
+  background-color: transparent;
+  box-sizing: border-box;
+  color: #14248a;
+  text-decoration: none;
+  transition: color .15s ease-in;}
+}
+a:link,
+a:visited{
+  transition: color .15s ease-in;
+}
+a:hover{
+  color: #48233c;
+  transition: color .15s ease-in;
+}
+a:active{
+  transition: color .15s ease-in;
+}
+a:focus{
+  color: #48233c;
+  outline: 1px dotted currentColor;
+  transition: color .15s ease-in;
+}
+
+
+/*---------------------------------------------------------------------------
+003 Display of Images with Alignment
+---------------------------------------------------------------------------*/
+img.alignright {
+  margin-left: 1rem;   /* Mimics Tachyon Margin Left 3 */
+}
+img.alignleft {
+  margin-right: 1rem; /* Mimics Tachyon Margin Right 3 */
+}
+img.aligncenter {
+  margin-left: 1rem;  /* Mimics Tachyon Margin Horizontal 3 */
+  margin-right: 1rem;
+}
+
+
+/*---------------------------------------------------------------------------
+004 Overflow Fixes
+---------------------------------------------------------------------------*/
+figure, img, ul, ol, input, button {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+/*---------------------------------------------------------------------------
+005 Theme Colours
+---------------------------------------------------------------------------*/
+.black{
+  color:#1c1018;
+}

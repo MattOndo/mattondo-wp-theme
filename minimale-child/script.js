@@ -1,0 +1,1 @@
+!function(n){n(document).ready(function(){n("#hamburger-button").click(function(){n(this).toggleClass("open"),n("#main-menu").slideToggle("fast")})})}(jQuery);

@@ -1,0 +1,77 @@
+// Comments
+
+.commentlist {
+    @extend .list;
+    @extend .pa0;
+
+    ul.children {
+        @extend .list;
+        -webkit-margin-before: .5em;
+        -webkit-margin-after: .5em;
+        -webkit-margin-start: 0px;
+        -webkit-margin-end: 0px;
+        -webkit-padding-start: .5rem;
+
+        @media screen and (min-width: 768px) {
+            -webkit-margin-before: 1em;
+            -webkit-margin-after: 1em;
+            -webkit-margin-start: 0px;
+            -webkit-margin-end: 0px;
+            -webkit-padding-start: 2rem;
+        }
+    }
+
+    .comment-author {
+        cite.fn {
+            @extend .fs-normal;
+            @extend .dib;
+        }
+    }
+
+    .comment-meta {
+        @extend .absolute;
+        @extend .top-0;
+        @extend .right-0;
+        @extend .f6;
+        @extend .pt2;
+        @extend .pr2;
+
+        a {
+            @extend .black;
+        }
+    }
+
+    .comment {
+
+        .comment-body {
+            @extend .relative;
+            @extend .bg-light-gray;
+            @extend .pa2;
+            @extend .br3;
+            @extend .measure;
+            @extend .mt2;
+        }
+    }
+
+    .reply {
+        @extend .grow;
+        @extend .dib;
+
+        a.comment-reply-link:before {
+            content: 'reply';
+            font-family: "Material Icons";
+        }
+    }
+}
+
+#respond {
+    @extend .bg-light-gray;
+    @extend .pv1;
+    @extend .ph3;
+    @extend .br3;
+    @extend .measure;
+
+    .comment-reply-title {
+        @extend .mt2;
+    }
+}
